@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
@@ -111,12 +110,12 @@ for(int i=0;i<HEIGHT;i++)
 		//COLLISION CHECK
 		for(int k=0;k<OBSTACLES;k++)
 		{
-   			 if(obstacleH[k] == dinoX)   
+   			 if(obstacleX[k] == dinoX)   
     		{
      		         if(obstacleH[k] == 1 && dinoY == 0)
          	         gameover = 1;
   	      
-      			  if(obstacleX[k] == 2&& !isDucking)
+      			  if(obstacleH[k] == 2&& !isDucking)
            		 gameover = 1;
     		}
 	}
@@ -125,7 +124,7 @@ for(int i=0;i<HEIGHT;i++)
 
 		//SCORE
 		score++;
-		//SPEED INCREASE 
+		//SPPED INCREASE 
 		int speed =50-score/10;
 		if(speed<10) speed=10;
 		Sleep(speed);
@@ -143,3 +142,8 @@ if(choice!='r' && choice!='R')
 return 0;
 }
 }
+
+
+       
+	
+	
